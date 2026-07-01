@@ -18,8 +18,9 @@ Back Pro 公开站点，托管于 GitHub Pages。
 ## Deploy
 
 1. Push changes to the `main` branch.
-2. In GitHub repo **Settings → Pages**, select **Deploy from branch → main → / (root)**.
-3. Wait a few minutes for the site to build.
+2. In GitHub repo **Settings → Pages**, set **Build and deployment → Source** to **GitHub Actions**.
+3. The `Deploy GitHub Pages` workflow runs on every push to `main`.
+4. Wait a few minutes, then open the URLs above.
 
 ## Contact
 
