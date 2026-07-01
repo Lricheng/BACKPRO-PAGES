@@ -1,7 +1,20 @@
 (function () {
   var STORAGE_KEY = "backpro-pages-lang";
 
+  function langFromQuery() {
+    var params = new URLSearchParams(window.location.search);
+    var queryLang = (params.get("lang") || "").toLowerCase();
+    if (queryLang === "zh" || queryLang === "en") {
+      return queryLang;
+    }
+    return null;
+  }
+
   function detectLang() {
+    var queryLang = langFromQuery();
+    if (queryLang) {
+      return queryLang;
+    }
     var stored = localStorage.getItem(STORAGE_KEY);
     if (stored === "zh" || stored === "en") {
       return stored;
