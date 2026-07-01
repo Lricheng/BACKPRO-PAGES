@@ -1,0 +1,20 @@
+{
+  "name": "backpro-pages",
+  "version": "1.0.0",
+  "description": "Back Pro 公开站点，托管于 GitHub Pages。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lricheng/BACKPRO-PAGES.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lricheng/BACKPRO-PAGES/issues"
+  },
+  "homepage": "https://github.com/Lricheng/BACKPRO-PAGES#readme"
+}

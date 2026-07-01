@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="assets/css/site.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content" lang="zh">跳到主要内容</a>
+    <a class="skip-link" href="#main-content" lang="en">Skip to content</a>
+
     <header class="site-header">
       <div class="site-header-inner">
         <a class="site-brand" href="./">
@@ -32,16 +35,18 @@
             <a href="support/" lang="en">Support</a>
           </div>
           <div class="lang-toggle" role="group" aria-label="Language">
-            <button type="button" data-lang-btn="zh">中文</button>
-            <button type="button" data-lang-btn="en">English</button>
+            <button type="button" data-lang-btn="zh" aria-pressed="true">中文</button>
+            <button type="button" data-lang-btn="en" aria-pressed="false">English</button>
           </div>
         </nav>
       </div>
     </header>
 
-    <main class="page-main">
+    <main id="main-content" class="page-main">
       <div class="page-inner">
         <section class="hero-card">
+          <span class="page-kicker" lang="zh">Back Pro · 官方站点</span>
+          <span class="page-kicker" lang="en">Back Pro · Official site</span>
           <h1 lang="zh">为手机背板与背贴而设计</h1>
           <h1 lang="en">Designed for phone back plates &amp; stickers</h1>
           <p class="lead" lang="zh">
@@ -62,6 +67,8 @@
             <div class="nav-card-desc" lang="en">
               Learn how Back Pro handles permissions, local storage, on-device AI, and in-app purchases.
             </div>
+            <span class="nav-card-arrow" lang="zh">阅读全文 →</span>
+            <span class="nav-card-arrow" lang="en">Read full policy →</span>
           </a>
           <a class="nav-card" href="support/">
             <div class="nav-card-title" lang="zh">技术支持</div>
@@ -72,6 +79,8 @@
             <div class="nav-card-desc" lang="en">
               FAQs, restore purchase guidance, and how to contact the developer for help.
             </div>
+            <span class="nav-card-arrow" lang="zh">查看 FAQ →</span>
+            <span class="nav-card-arrow" lang="en">Browse FAQs →</span>
           </a>
         </div>
       </div>

@@ -15,15 +15,15 @@
     document.documentElement.dataset.lang = lang;
     localStorage.setItem(STORAGE_KEY, lang);
 
-    var buttons = document.querySelectorAll("[data-lang-btn]");
-    buttons.forEach(function (button) {
-      button.classList.toggle("is-active", button.dataset.langBtn === lang);
+    document.querySelectorAll("[data-lang-btn]").forEach(function (button) {
+      var active = button.dataset.langBtn === lang;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-pressed", active ? "true" : "false");
     });
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    var lang = detectLang();
-    setLang(lang);
+    setLang(detectLang());
 
     document.querySelectorAll("[data-lang-btn]").forEach(function (button) {
       button.addEventListener("click", function () {

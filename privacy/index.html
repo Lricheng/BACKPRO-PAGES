@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../assets/css/site.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content" lang="zh">跳到主要内容</a>
+    <a class="skip-link" href="#main-content" lang="en">Skip to content</a>
+
     <header class="site-header">
       <div class="site-header-inner">
         <a class="site-brand" href="../">
@@ -29,14 +32,14 @@
             <a href="../support/" lang="en">Support</a>
           </div>
           <div class="lang-toggle" role="group" aria-label="Language">
-            <button type="button" data-lang-btn="zh">中文</button>
-            <button type="button" data-lang-btn="en">English</button>
+            <button type="button" data-lang-btn="zh" aria-pressed="true">中文</button>
+            <button type="button" data-lang-btn="en" aria-pressed="false">English</button>
           </div>
         </nav>
       </div>
     </header>
 
-    <main class="page-main">
+    <main id="main-content" class="page-main">
       <div class="page-inner">
         <article class="content-card">
           <section lang="zh">
